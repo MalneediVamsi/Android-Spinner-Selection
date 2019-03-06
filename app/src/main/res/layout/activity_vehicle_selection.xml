@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    tools:context=".Vehicle_selection">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/size1"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/vehicle_type"
+        android:layout_width="@dimen/size4"
+        android:layout_height="@dimen/size5"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size2"
+        android:elevation="8dp"
+        android:background="@android:color/background_light"
+        android:entries="@array/Type" />
+
+    <Button
+        android:id="@+id/find_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_marginBottom="@dimen/size5"
+        android:background="@android:color/holo_green_light"
+        android:onClick="findVehicles"
+        android:text="@string/text2"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="@dimen/size1"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_marginRight="@dimen/size1"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:text="@string/description"
+        android:textSize="@dimen/size3" />
+
+
+</LinearLayout>
